@@ -17,6 +17,8 @@
 		490B822128870F7C00F8D9DB /* EcoLivingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B822028870F7C00F8D9DB /* EcoLivingTests.swift */; };
 		490B822B28870F7C00F8D9DB /* EcoLivingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B822A28870F7C00F8D9DB /* EcoLivingUITests.swift */; };
 		490B822D28870F7C00F8D9DB /* EcoLivingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B822C28870F7C00F8D9DB /* EcoLivingUITestsLaunchTests.swift */; };
+		490B823A2887269E00F8D9DB /* DareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B82392887269E00F8D9DB /* DareViewController.swift */; };
+		490B823C2887277200F8D9DB /* TruthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B823B2887277200F8D9DB /* TruthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		490B822628870F7C00F8D9DB /* EcoLivingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcoLivingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		490B822A28870F7C00F8D9DB /* EcoLivingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoLivingUITests.swift; sourceTree = "<group>"; };
 		490B822C28870F7C00F8D9DB /* EcoLivingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoLivingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		490B82392887269E00F8D9DB /* DareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareViewController.swift; sourceTree = "<group>"; };
+		490B823B2887277200F8D9DB /* TruthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				490B820628870F7900F8D9DB /* AppDelegate.swift */,
 				490B820828870F7900F8D9DB /* SceneDelegate.swift */,
 				490B820A28870F7900F8D9DB /* ViewController.swift */,
+				490B82392887269E00F8D9DB /* DareViewController.swift */,
+				490B823B2887277200F8D9DB /* TruthViewController.swift */,
 				490B820C28870F7900F8D9DB /* Main.storyboard */,
 				490B821228870F7C00F8D9DB /* Assets.xcassets */,
 				490B821428870F7C00F8D9DB /* LaunchScreen.storyboard */,
@@ -262,8 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				490B820B28870F7900F8D9DB /* ViewController.swift in Sources */,
+				490B823A2887269E00F8D9DB /* DareViewController.swift in Sources */,
 				490B820728870F7900F8D9DB /* AppDelegate.swift in Sources */,
 				490B821128870F7900F8D9DB /* EcoLiving.xcdatamodeld in Sources */,
+				490B823C2887277200F8D9DB /* TruthViewController.swift in Sources */,
 				490B820928870F7900F8D9DB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
