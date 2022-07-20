@@ -7,12 +7,18 @@
 
 import UIKit
 
+var countVal = 0
+
 class ProfileViewController: UIViewController {
 
+    
+    @IBOutlet weak var countDisplay: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        countDisplay.text = "  Count: \(countVal) dares"
     }
     
 

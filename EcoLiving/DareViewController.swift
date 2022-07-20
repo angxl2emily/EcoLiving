@@ -15,7 +15,12 @@ class DareViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func completeDareBtn(_ sender: Any) {
+        
+        countVal += 1
+        
+    }
+    
     /*
     // MARK: - Navigation
 
