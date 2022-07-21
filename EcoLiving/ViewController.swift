@@ -28,6 +28,25 @@ class ViewController: UIViewController {
             greetingMsg.text = "Good Evening!"
         }
     
+        
+        let notificationContent = UNMutableNotificationContent()
+        notificationContent.title = "Truth or Dare?"
+        notificationContent.body = "Choose your EcoLiving Dare for today!"
+        notificationContent.badge = NSNumber(value: 1)
+        notificationContent.sound = .default
+                        
+        var datComp = DateComponents()
+        datComp.hour = 8
+        datComp.minute = 0
+        let trigger = UNCalendarNotificationTrigger(dateMatching: datComp, repeats: true)
+        let request = UNNotificationRequest(identifier: "ID", content: notificationContent, trigger: trigger)
+                        UNUserNotificationCenter.current().add(request) { (error : Error?) in
+                            if let theError = error {
+                                print(theError.localizedDescription)
+                            }
+                        }
+        
+        
     }
 
 

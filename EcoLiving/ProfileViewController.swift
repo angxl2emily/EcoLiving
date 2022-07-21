@@ -11,6 +11,7 @@ var countVal = 0
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var streakCount: UILabel!
     
     @IBOutlet weak var countDisplay: UILabel!
     
@@ -18,7 +19,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        countDisplay.text = "  Count: \(countVal) dares"
+        streakCount.text = " \(countVal) dares"
     }
     
 
