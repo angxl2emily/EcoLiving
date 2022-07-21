@@ -209,7 +209,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.30980392156862746" green="0.21568627450980393" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Completed" cornerStyle="capsule">
+                                <buttonConfiguration key="configuration" style="filled" title="Exit" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="35"/>
                                     <color key="baseBackgroundColor" red="0.30980392159999998" green="0.2156862745" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
@@ -249,14 +249,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date: 7/18/22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbp-ax-M6I">
-                                <rect key="frame" x="78" y="64" width="259" height="76"/>
+                                <rect key="frame" x="78" y="44" width="259" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIT-aA-HC6">
-                                <rect key="frame" x="59" y="256" width="296" height="364"/>
+                                <rect key="frame" x="59" y="236" width="296" height="364"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.1960784314" green="0.3411764706" blue="0.41176470590000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -264,8 +264,26 @@
                                     <color key="baseBackgroundColor" red="0.19607841970000001" green="0.34117650989999998" blue="0.41176474089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cZ-fp-VdF">
+                                <rect key="frame" x="86" y="714" width="243" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.55294117649999996" green="0.53725490200000003" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Not Today" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="35"/>
+                                    <color key="baseBackgroundColor" red="0.30980392159999998" green="0.2156862745" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="completeDareBtn:" destination="B5k-0L-zoM" eventType="touchUpInside" id="4LZ-mW-4PC"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="KGZ-Mm-qra"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-20 at 11.04.47 AM" translatesAutoresizingMaskIntoConstraints="NO" id="uup-Ac-DN2">
+                                <rect key="frame" x="106" y="113" width="202" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmI-e7-KYY">
-                                <rect key="frame" x="112" y="649" width="196" height="78"/>
+                                <rect key="frame" x="86" y="619" width="243" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.55294117647058827" green="0.53725490196078429" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -278,10 +296,6 @@
                                     <segue destination="Ym7-78-aq8" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Hye-zV-FZC"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-20 at 11.04.47 AM" translatesAutoresizingMaskIntoConstraints="NO" id="uup-Ac-DN2">
-                                <rect key="frame" x="106" y="133" width="202" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X8q-uG-B2v"/>
                         <color key="backgroundColor" red="0.93333339689999995" green="0.90196073060000004" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -349,7 +363,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Hye-zV-FZC"/>
-        <segue reference="eqP-IO-4cc"/>
+        <segue reference="KGZ-Mm-qra"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2022-07-20 at 11.04.35 AM" width="726" height="326"/>
