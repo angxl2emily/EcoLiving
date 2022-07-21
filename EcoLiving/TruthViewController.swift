@@ -6,16 +6,28 @@
 //
 
 import UIKit
+import Foundation
 
 class TruthViewController: UIViewController {
 
+    @IBOutlet weak var dateDisplay: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        dateDisplay.text = "Date: \(getDate())"
     }
     
-
+    func getDate() -> String{
+        let day = Date()
+        let dateFormatter = DateFormatter()
+         
+        dateFormatter.dateFormat = "MM.dd.yyyy"
+         
+        let result = dateFormatter.string(from: day)
+        return result
+    }
     /*
     // MARK: - Navigation
 
