@@ -7,6 +7,7 @@
 
 import UIKit
 import Foundation
+import UserNotifications
 
 class ViewController: UIViewController {
 
@@ -29,6 +30,31 @@ class ViewController: UIViewController {
         }
     
         
+        let center = UNUserNotificationCenter.current()
+        
+        center.requestAuthorization(options: [.alert, .sound]){
+            (granted, error) in
+        }
+        
+        let content = UNMutableNotificationContent()
+        
+        content.title = "Truth or Dare?"
+        content.body = "Choose your EcoLiving Dare for today!"
+        
+        let date = Date().addingTimeInterval(5)
+        
+        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+        
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        
+        let uuidString = UUID().uuidString
+        
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
+        
+        center.add(request){
+            (error) in
+        }
+        /*
         let notificationContent = UNMutableNotificationContent()
         notificationContent.title = "Truth or Dare?"
         notificationContent.body = "Choose your EcoLiving Dare for today!"
@@ -36,7 +62,7 @@ class ViewController: UIViewController {
         notificationContent.sound = .default
                         
         var datComp = DateComponents()
-        datComp.hour = 8
+        datComp.hour = 17
         datComp.minute = 0
         let trigger = UNCalendarNotificationTrigger(dateMatching: datComp, repeats: true)
         let request = UNNotificationRequest(identifier: "ID", content: notificationContent, trigger: trigger)
@@ -45,7 +71,8 @@ class ViewController: UIViewController {
                                 print(theError.localizedDescription)
                             }
                         }
-        
+         
+        */
         
     }
 
