@@ -101,6 +101,9 @@
                         <color key="backgroundColor" red="0.93333333333333335" green="0.90196078431372551" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="WCL-qx-jk1"/>
+                    <connections>
+                        <outlet property="greetingMsg" destination="PKk-9N-HPg" id="9hM-Ff-YGB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -235,6 +238,9 @@
                         <color key="backgroundColor" red="0.93333339689999995" green="0.90196073060000004" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="TQU-BC-fGZ"/>
+                    <connections>
+                        <outlet property="dateDisplay" destination="xwF-Ye-6d0" id="Avh-BQ-uPa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78N-Ua-kJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -264,20 +270,6 @@
                                     <color key="baseBackgroundColor" red="0.19607841970000001" green="0.34117650989999998" blue="0.41176474089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cZ-fp-VdF">
-                                <rect key="frame" x="86" y="714" width="243" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.55294117649999996" green="0.53725490200000003" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Not Today" cornerStyle="capsule">
-                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="35"/>
-                                    <color key="baseBackgroundColor" red="0.30980392159999998" green="0.2156862745" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="completeDareBtn:" destination="B5k-0L-zoM" eventType="touchUpInside" id="4LZ-mW-4PC"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="KGZ-Mm-qra"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-07-20 at 11.04.47 AM" translatesAutoresizingMaskIntoConstraints="NO" id="uup-Ac-DN2">
                                 <rect key="frame" x="106" y="113" width="202" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -296,11 +288,27 @@
                                     <segue destination="Ym7-78-aq8" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Hye-zV-FZC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C43-MC-SPS">
+                                <rect key="frame" x="86" y="705" width="243" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Not Today" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Optima-Regular" family="Optima" pointSize="35"/>
+                                    <color key="baseBackgroundColor" red="0.30980392159999998" green="0.2156862745" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="denyBtn:" destination="B5k-0L-zoM" eventType="touchUpInside" id="KSf-Ow-XB7"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="o1m-r2-SJz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X8q-uG-B2v"/>
                         <color key="backgroundColor" red="0.93333339689999995" green="0.90196073060000004" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="goR-AE-mmN"/>
+                    <connections>
+                        <outlet property="dateDisplay" destination="dbp-ax-M6I" id="5mj-sJ-MAK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZI-ci-5u7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -362,8 +370,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Hye-zV-FZC"/>
-        <segue reference="KGZ-Mm-qra"/>
+        <segue reference="lMv-8y-LWL"/>
+        <segue reference="eqP-IO-4cc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Screen Shot 2022-07-20 at 11.04.35 AM" width="726" height="326"/>

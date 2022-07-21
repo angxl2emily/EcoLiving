@@ -6,13 +6,17 @@
 //
 
 import UIKit
+import Foundation
 
 class DareViewController: UIViewController {
 
+    @IBOutlet weak var dateDisplay: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        dateDisplay.text = "Date: \(getDate())"
     }
     
     @IBAction func completeDareBtn(_ sender: Any) {
@@ -21,6 +25,21 @@ class DareViewController: UIViewController {
         
     }
     
+    @IBAction func denyBtn(_ sender: Any) {
+        countVal += 0
+    }
+    
+    func getDate() -> String{
+        let day = Date()
+        let dateFormatter = DateFormatter()
+         
+        dateFormatter.dateFormat = "MM.dd.yyyy"
+         
+        let result = dateFormatter.string(from: day)
+        return result
+    }
+    
+  
     /*
     // MARK: - Navigation
 
